@@ -3,50 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Michael Roth</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-	<script src="https://use.fontawesome.com/6172181bd7.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>Membrane Measurements</title>
 </head>
 <body>
-<!-- 	<div class="container">
-		<header>
-			<div class="logo">
-				<h1>Michael Roth</h1>
-			</div>
+	<!-- Need to do: 
+		Form validation. Only allow specific numbers in house PSI/temp inputs.
+		Style page.
+		
+		Figure out a way to make answer text box prettier
+	-->
 
-			<nav class="navigation">
-				<a href="#home">Home</a>
-				<a href="#projects">Projects</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</header>
+	<form>
+		<div>
+			<label>Your House PSI: </label>
+			<input type="number" id="house-psi"  min="20" max="150" pattern="[0-9]">
+		</div>
 
-		<main class="content">
-			<section id="home">
-				
-			</section>
+		<div>
+			<label>Your House Water Temperature in Fahrenheit: </label>
+			<input type="number" id="house-temp" min="50" max="94" pattern="[0-9]">
+		</div>
 
-			<section id="projects">
-				
-			</section>
+		<div>
+			<label>Membrane PSI Rating (50 or 65): </label>
+			<input type="radio" id="membrane-psi-rating-50" value="50" name="memb-psi-rating">
+			<label>50</label>
+			<input type="radio" id="membrane-psi-rating-65" value="65" name="memb-psi-rating">
+			<label>65</label>
+		</div>
+		
+		<div>
+			<label>Membrane Rated GPD: </label>	
+			<input type="radio" id="membrane-gpd-rating-50" value="50" name="memb-gpd-rating">
+			<label>50</label>
+			<input type="radio" id="membrane-gpd-rating-75" value="75" name="memb-gpd-rating">
+			<label>75</label>
+			<input type="radio" id="membrane-gpd-rating-100" value="100" name="memb-gpd-rating">
+			<label>100</label>
+			<input type="radio" id="membrane-gpd-rating-150" value="150" name="memb-gpd-rating">
+			<label>150</label>
+		</div>
 
-			<section id="about">
-				
-			</section>
+		<div>
+			<label>Membrane GPD With Your House PSI and Temperature: </label>
+			<input type="text" id="final" disabled="disabled">
+		</div>
 
-			<section id="contact">
-				<p>Contact Me: </p>
-			</section>
+		<button id="button" type="button">SUBMIT</button>
+	</form>
 
-		</main>
+	<section>
+		<div class="fill">
+			<p id="fill-cup">How long to fill a cup: </p>
+			<p id="fill-4-cups">How long to fill 4 cups: </p>
+			<p id="fill-gallon">How long to fill one gallon: </p>
+			<p id="fill-35-gallons">How long to fill 35 gallons: </p>
+			<p id="fill-100-gallons">How long to fill 100 gallons: </p>
+		</div>
+	</section>		
+	
 
-		<footer>
-			<section class="socialmedia">
-				<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-			</section>
-		</footer>
-	</div> -->
+	<script type="text/javascript" src="javascript/javascript.js"></script>
 </body>
 </html>
