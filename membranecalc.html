@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Membrane Calculator</title>
+</head>
+<body>
+    <h1>Reverse Osmosis Membrane Expected Production Calculator</h1>
+    <form class="form" id="formID">
+        <div>
+            <label for="membGPD">Membrane Rated GPD</label> 
+            <input id="membGPD" type="number" name="membGPD" required>
+        </div>
+        <div>
+            <label for="membPSI">Membrane Rated PSI</label>
+            <input id="membPSI" type="number" name="membPSI" required>
+        </div>
+        <div>        
+            <label for="housePSI">House PSI</label> 
+            <input id="housePSI" type="number" name="housePSI" required>
+        </div>
+        <div>
+            <label for="houseTemp">House Water Temp (F°)</label> 
+            <input id="houseTemp" type="number" name="houseTemp" required>
+        </div>
+        <div id="answer">
+            <p id="final"></p>
+        </div>
+        <div class="top-btn">
+            <div class="btn">
+                <input type="button" value="Calculate" onclick="membraneCalc()">
+            </div>
+            <div class="btn">
+                <input type="button" value="Reset" onclick="resetForm()">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
