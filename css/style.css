@@ -17,6 +17,34 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+.fab {
+  color: blue;
+  padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Membrane Calc CSS */
+
 form {
   font-size: 1.25rem;
   width: 15%;
